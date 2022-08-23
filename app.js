@@ -14,12 +14,12 @@ expandSkillsBtn.addEventListener('click', () => {
         collapseSkills.hide()
         arrow.classList.remove('down')
         arrow.classList.add('up')
-        skillsTooltip.setContent({'.tooltip-inner': 'Show More'})
+        skillsTooltip.setContent({'.tooltip-inner': 'Pokaż więcej'})
     } else {
         collapseSkills.show()
         arrow.classList.remove('up')
         arrow.classList.add('down')
-        skillsTooltip.setContent({'.tooltip-inner': 'Show Less'})
+        skillsTooltip.setContent({'.tooltip-inner': 'Pokaż mniej'})
     }
 })
 
@@ -58,19 +58,11 @@ emailLinks.forEach(emailLink => {
 
   emailLink.addEventListener('click', () => {
     if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
-      if (document.querySelector('html').lang === 'en') {
-        emailTooltip.setContent({'.tooltip-inner': 'Copied!'})
-        setTimeout(() => {
-          emailTooltip.hide()
-          emailTooltip.setContent({'.tooltip-inner': 'Click to copy'})
-        }, 1500)
-      } else {
-        emailTooltip.setContent({'.tooltip-inner': 'Skopiowano!'})
-        setTimeout(() => {
-          emailTooltip.hide()
-          emailTooltip.setContent({'.tooltip-inner': 'Kliknij żeby skopiować'})
-        }, 1500)
-      }
+      emailTooltip.setContent({'.tooltip-inner': 'Skopiowano!'})
+      setTimeout(() => {
+        emailTooltip.hide()
+        emailTooltip.setContent({'.tooltip-inner': 'Kliknij aby skopiować'})
+      }, 1500)
       return navigator.clipboard.writeText('marcinrybok@protonmail.com');
     }
   
