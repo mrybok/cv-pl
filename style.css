@@ -241,17 +241,13 @@ p a {
     padding: 0 192px;
   }
 
-  .profile, .interests, .contact {
+  .profile, .interests {
     display: none!important;
   }
 
   .about-me {
     padding-top: 78px;
     background-color: #242C38!important;
-  }
-
-  .projects {
-    padding-bottom: 30vh;
   }
 }
 

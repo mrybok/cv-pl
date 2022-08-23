@@ -42,7 +42,7 @@ document.getElementById('expandNavBtn').addEventListener('click', () => {
 })
 
 document.getElementById('collapseNav').addEventListener('shown.bs.collapse', () => {
-  document.getElementById('body').style.height = 'calc(100% - 296px)'
+  document.getElementById('body').style.height = 'calc(100% - 336px)'
 })
 
 window.addEventListener('resize', () => {
