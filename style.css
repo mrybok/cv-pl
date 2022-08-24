@@ -378,9 +378,24 @@ p a {
   opacity: 0.75;
   align-items: center;
   border-radius: 4px;
+  height: 52.5px;
 }
 
 button i {
+  font-size: 19px;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #A1D2FA;
+  --bs-btn-border-color: #A1D2FA;
+  --bs-btn-hover-bg: #A1D2FA;
+  --bs-btn-hover-border-color: #A1D2FA;
+  --bs-btn-active-bg: #A1D2FA;
+  --bs-btn-active-border-color: #A1D2FA;
+  --bs-btn-disabled-color: #A1D2FA;
+}
+
+.material-symbols-outlined {
   font-size: 19px;
 }
 
