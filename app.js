@@ -250,6 +250,7 @@ function animateCircle(i) {
 
 document.addEventListener('DOMContentLoaded', () => {
   animateCircle(0)
+  skillsTooltip.show()
 })
 
 // Read More buttons

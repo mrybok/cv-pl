@@ -2,6 +2,7 @@ body {
   height: 100vh;
   font-family: 'Courier New', monospace;
   color: #f8f9fa;
+  overflow-y: hidden;
 }
 
 h1 {
