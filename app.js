@@ -251,3 +251,37 @@ function animateCircle(i) {
 document.addEventListener('DOMContentLoaded', () => {
   animateCircle(0)
 })
+
+// Read More buttons
+const readMoreBtns = document.querySelectorAll('.read-more')
+
+readMoreBtns.forEach(readMore => {
+  const id = readMore.id.substring(0, readMore.id.length - 1)
+
+  readMore.addEventListener('click', () => {
+    const texts = document.querySelectorAll(`.${id}-text`)
+
+    texts.forEach(text => {
+      text.classList.remove('d-none')
+    })
+
+    readMore.classList.add('d-none')
+  })
+})
+
+const showLessBtns = document.querySelectorAll('.show-less')
+
+showLessBtns.forEach(showLess => {
+  const id = showLess.id.substring(0, showLess.id.length - 1)
+
+  showLess.addEventListener('click', () => {
+    const texts = document.querySelectorAll(`.${id}-text`)
+
+    texts.forEach(text => {
+      text.classList.add('d-none')
+    })
+
+    const readMore = document.querySelector(`#${id}0.read-more`)
+    readMore.classList.remove('d-none')
+  })
+})
