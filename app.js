@@ -248,9 +248,12 @@ function animateCircle(i) {
   }
 }
 
-window.addEventListener('load', () => {
-  animateCircle(0)
+document.addEventListener('DOMContentLoaded', () => {
   skillsTooltip.show()
+})
+
+document.querySelector('img.rounded-circle').addEventListener('load', () => {
+  animateCircle(0)
 })
 
 // Read More buttons
