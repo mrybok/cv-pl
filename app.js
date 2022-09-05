@@ -251,7 +251,7 @@ function animateCircle(i) {
 document.addEventListener('DOMContentLoaded', () => {
   skillsTooltip.show()
   
-  const image = Image()
+  const image = new Image()
   image.src = 'static/images/ja_6.jpg'
 
   if (image.complete) {
