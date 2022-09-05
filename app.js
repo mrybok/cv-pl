@@ -248,7 +248,7 @@ function animateCircle(i) {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
   animateCircle(0)
   skillsTooltip.show()
 })
